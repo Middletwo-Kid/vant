@@ -44,23 +44,22 @@ Vant 是**有赞前端团队**开源的移动端组件库，于 2016 年开源�
 ## 安装
 
 ```bash
-# 通过 npm 安装
+# Vue 2 项目，安装 Vant 2.x 版本：
 npm i vant -S
 
-# 通过 yarn 安装
-yarn add vant
+# Vue 3 项目，安装 Vant 3.x 版本：
+npm i vant@next -S
 ```
-
-> Tips: Vue 3 项目请安装 Vant 3.0，参见 [issue#7035](https://github.com/youzan/vant/issues/7035)。
 
 ## 快速上手
 
 ```js
-import Vue from 'vue';
+import { createApp } from 'vue';
 import { Button } from 'vant';
 import 'vant/lib/index.css';
 
-Vue.use(Button);
+const app = createApp();
+app.use(Button);
 ```
 
 vant 也支持按需引入、CDN 引入等方式，详细说明见 [快速上手](https://vant-contrib.gitee.io/vant#/zh-CN/quickstart).
